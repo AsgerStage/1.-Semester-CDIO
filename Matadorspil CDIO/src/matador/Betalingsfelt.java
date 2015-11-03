@@ -11,6 +11,12 @@ public class Betalingsfelt extends Felt
 		this.pris =pris;
 		this.navn=navn;
 	}
+	
+	public void passeret(Spiller spiller)
+	{
+
+		spiller.besked("Passerer "+navn);
+	}
 
 	public void landet(Spiller spiller)                   
 	{
