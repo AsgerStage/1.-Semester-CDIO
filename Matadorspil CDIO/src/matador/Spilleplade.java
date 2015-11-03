@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Spilleplade
 {
 
+	int spillersTur = 0;
 	ArrayList<Felt> felter = new ArrayList<Felt>();
 	ArrayList<Spiller> spillere = new ArrayList<Spiller>();
 	

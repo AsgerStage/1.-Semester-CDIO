@@ -3,11 +3,12 @@ public class BenytSpil {
 
 	public static void main(String[] arg)
 	{
+		Spilleplade spil = new Spilleplade();		
 		Spiller Asger = new Spiller("Asger",1000);
-		Spiller Basti = new Spiller("Basti",10000);
-		Asger.besked("test");
-		Asger.transaktion(-500);
-		Basti.transaktion(-500);
+		Spiller Basti = new Spiller("Basti",1000);
+		spil.spillere.add(Asger);
+		spil.spillere.add(Basti);
+
 	}
 	
 	
