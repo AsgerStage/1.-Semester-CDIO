@@ -1,6 +1,6 @@
 package matador;
 
-public abstract class Felt
+public class Felt
 {
 		String navn;
 		
@@ -12,6 +12,7 @@ public abstract class Felt
 		
 		public void passeret(Spiller spiller)
 		{
+
 			spiller.besked("Passerer "+navn);
 		}
 	}
