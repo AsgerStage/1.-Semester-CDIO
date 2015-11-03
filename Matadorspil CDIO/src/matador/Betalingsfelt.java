@@ -13,7 +13,7 @@ public class Betalingsfelt extends Felt
 
 	public void landet(Spiller sp)                   
 	{
-		sp.besked("Ændring i din balance på: "+pris);
+		sp.besked("Du er landet på "+navn+" Ændring i din balance på: "+pris);
 		sp.transaktion(pris);
 	}
 	
