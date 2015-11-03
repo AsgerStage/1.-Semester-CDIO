@@ -4,7 +4,10 @@ public class BenytSpil {
 	public static void main(String[] arg)
 	{
 		Spiller Asger = new Spiller("Asger",1000);
+		Spiller Basti = new Spiller("Basti",10000);
 		Asger.besked("test");
+		Asger.transaktion(-500);
+		Basti.transaktion(-500);
 	}
 	
 	
