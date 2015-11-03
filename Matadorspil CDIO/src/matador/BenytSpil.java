@@ -10,7 +10,7 @@ public class BenytSpil
 		Spiller Basti = new Spiller("Basti", 1000);
 		spil.spillere.add(Basti);
 		
-		for (spil.spillersTur = 0; spil.spillersTur < 40; spil.spillersTur++) {
+		for (spil.spillersTur = 0; spil.spillersTur < 10000; spil.spillersTur++) {
 			Spiller spiller = spil.spillere.get(spil.spillersTur % spil.spillere.size());
 
 			spiller.slag = (int) (Math.random() * 12) + 2;
