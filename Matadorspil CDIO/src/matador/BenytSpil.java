@@ -9,6 +9,29 @@ public class BenytSpil {
 		spil.spillere.add(Asger);
 		spil.spillere.add(Basti);
 //test
+		for (spil.spillersTur=0; spil.spillersTur<40; spil.spillersTur++)
+		{
+			Spiller spiller = spil.spillere.get(spil.spillersTur % spil.spillere.size());
+			
+			spiller.slag = (int)(Math.random()*12)+2;
+			System.out.println(spiller.navn+ "står på felt" +spiller.position+ "slår" +spiller.slag);
+			
+				for (int i=1; i<=spiller.slag; i=i+1)
+				{
+					spiller.position = spiller.position + 1;
+					
+					if (spiller.position == spil.felter.size()) spiller.position=0;
+						Felt felt = spil.felter.get(spiller.position);
+					
+					if (i<spiller.slag) felt.passeret(spiller);
+					else felt.landet(spiller);
+					
+					try { Thread.sleep(300); } 
+					catch (Exception e) {}
+				}
+		}
+		try { Thread.sleep(3000); } 
+		catch (Exception e) {}
 	}
 	
 	
