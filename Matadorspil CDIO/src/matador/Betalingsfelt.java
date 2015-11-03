@@ -11,10 +11,10 @@ public class Betalingsfelt extends Felt
 		this.pris =pris;
 	}
 
-	public void landet(Spiller sp)                   
+	public void landet(Spiller spiller)                   
 	{
-		sp.besked("Du er landet på "+navn+" Ændring i din balance på: "+pris);
-		sp.transaktion(pris);
+		spiller.besked("Du er landet på "+navn+" Ændring i din balance på: "+pris);
+		spiller.transaktion(pris);
 	}
 	
 }

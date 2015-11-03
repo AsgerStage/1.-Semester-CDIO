@@ -1,12 +1,13 @@
 package matador;
+public class BenytSpil
+{
 
-public class BenytSpil {
-
-	public static void main(String[] arg) {
+	public static void main(String[] arg)
+	{
 		Spilleplade spil = new Spilleplade();
 		Spiller Asger = new Spiller("Asger", 1000);
-		Spiller Basti = new Spiller("Basti", 1000);
 		spil.spillere.add(Asger);
+		Spiller Basti = new Spiller("Basti", 1000);
 		spil.spillere.add(Basti);
 		
 		for (spil.spillersTur = 0; spil.spillersTur < 40; spil.spillersTur++) {
