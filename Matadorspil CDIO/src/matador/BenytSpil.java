@@ -8,7 +8,7 @@ public class BenytSpil {
 		Spiller Basti = new Spiller("Basti",1000);
 		spil.spillere.add(Asger);
 		spil.spillere.add(Basti);
-
+//test
 	}
 	
 	
