@@ -12,7 +12,7 @@ public abstract class Felt
 		
 		public void passeret(Spiller spiller)
 		{
-			
+			spiller.besked("Passerer "+navn);
 		}
 	}
 
