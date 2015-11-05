@@ -7,8 +7,7 @@ import org.junit.Test;
 public class SpillerTest {
 
 	Spiller Asger = new Spiller("Asger", 1000);
-	int konto =1000;
-	String navn= "testnavn";
+	
 	
 	@Test
 	public void testTransaktion()
