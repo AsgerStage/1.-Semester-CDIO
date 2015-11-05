@@ -24,8 +24,8 @@ public class Spiller
 		{
 			konto = konto + kr;
 			System.out.println(navn+" har nu "+konto+" kr på sin konto.");
-			if (konto>=6000){
-				System.out.println(navn+" har 6000 kroner og har vundet!!!");
+			if (konto>=3000){
+				System.out.println(navn+" har 3000 kroner og har vundet!!!");
 				System.exit(0); 
 			}
 		
