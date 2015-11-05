@@ -15,7 +15,7 @@ public class BenytSpil
 			Spiller spiller = spil.spillere.get(spil.spillersTur % spil.spillere.size());
 
 			spiller.slag = (int) (Math.random() * 12) + 2;
-			System.out.println(spiller.navn + "står på felt " + spiller.position + " og slår " + spiller.slag);
+			System.out.println(spiller.navn + " står på felt " + spiller.position + " og slår " + spiller.slag);
 
 			for (int i = 1; i <= spiller.slag; i = i + 1) {
 				spiller.position = spiller.position + 1;
