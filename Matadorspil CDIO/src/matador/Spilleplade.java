@@ -7,7 +7,7 @@ public class Spilleplade
 
 	ArrayList<Felt> felter = new ArrayList<Felt>();
 	ArrayList<Spiller> spillere = new ArrayList<Spiller>();
-	int spillersTur = 0;
+	public static int spillersTur = 0;
 	
 	public Spilleplade() 
 	{
@@ -19,7 +19,7 @@ public class Spilleplade
 		felter.add(new Betalingsfelt("Monastery",0));
 		felter.add(new Betalingsfelt("Black cave",-70));
 		felter.add(new Betalingsfelt("Huts in the mountain",60));
-		felter.add(new Betalingsfelt("The Werewall",-80));
+		felter.add(new Bonusfelt("The Werewall",-80));
 		felter.add(new Betalingsfelt("The pit",-50));
 		felter.add(new Betalingsfelt("Goldmine",650));
 		
