@@ -21,6 +21,12 @@ public class Spiller {
 		{
 			konto = konto + kr;
 			System.out.println(navn+" har nu "+konto+" kr på sin konto.");
+			if (konto<0)
+			{
+				konto=0;
+				System.out.println(navn+" er gået i minus, og kontoen er derfor sat til 0");
+			}
+			
 			if (konto>=3000){
 				System.out.println(navn+" har 3000 kroner og har vundet!!!");
 				System.exit(0); 
