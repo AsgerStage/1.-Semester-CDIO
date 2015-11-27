@@ -31,6 +31,7 @@ public class BenytSpil
 					felt.landet(spiller);
 				if(spiller.getKonto()<0){
 				      spil.sletSpiller(spiller);
+				      spiller.besked("Din konto er tom og du har derfor tabt");
 				}
 				try {
 					Thread.sleep(500);
@@ -43,7 +44,6 @@ public class BenytSpil
 		} catch (Exception e) {
 		}
 	}
-
 	// test komentar hilsen oivind
 	/*
 	 * vi laver en dice med en math og new random fra 2 til 12 denne random skal
