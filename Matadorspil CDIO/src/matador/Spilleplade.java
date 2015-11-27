@@ -28,10 +28,12 @@ public class Spilleplade
 	}
 	public void sletSpiller(Spiller spiller){
 		  spillere.remove(spillere.indexOf(spiller));
-	}{
+	{
 	if(spillere.size()==1){
-		System.out.println(": Du er den sidste spiller og har derfor vundet spillet, tillykke!");
-		
+		System.out.println("Der er nu kun 1 spiller tilbage og han/hun har vundet!");
+		System.exit(0);
 	};
 	}
 }
+}
+

@@ -5,11 +5,11 @@ public class BenytSpil
 	public static void main(String[] arg)
 	{
 		Spilleplade spil = new Spilleplade();
-		Spiller Asger = new Spiller("Asger", 30000);
+		Spiller Asger = new Spiller("Asger", 1000);
 		spil.spillere.add(Asger);
-		Spiller Basti = new Spiller("Basti", 30000);
+		Spiller Basti = new Spiller("Basti", 1000);
 		spil.spillere.add(Basti);
-		Spiller Peter = new Spiller("Peter", 30000);
+		Spiller Peter = new Spiller("Peter", 1000);
 		spil.spillere.add(Peter);
 		
 		for (spil.spillersTur = 0; spil.spillersTur < 10000; spil.spillersTur++) {
@@ -32,8 +32,6 @@ public class BenytSpil
 				if(spiller.getKonto()<0){
 				      spil.sletSpiller(spiller);
 				      spiller.besked("Din konto er tom og du har derfor tabt");
-				}{
-					
 				}
 				try {
 					Thread.sleep(500);
