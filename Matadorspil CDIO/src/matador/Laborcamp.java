@@ -4,7 +4,7 @@ public class Laborcamp extends Felt {
 	Spiller ejer;
 	double pris;
 	String navn;
-	double leje;
+	
 
 	
 	public Laborcamp(String navn,double pris) //konstruktør til oprettelsen af betalingsfelter
@@ -29,13 +29,13 @@ public class Laborcamp extends Felt {
 		{
 			spiller.transaktion(-pris);
 			ejer=spiller;
-			spiller.laborcamps++;
+			spiller.laborcamps=spiller.laborcamps+1;
 		}
 		}
 		else
 		{
 			spiller.besked("du er landet på en anden spillers grund!");
-			spiller.betal(ejer, (int)Math.random()*100*spiller.laborcamps);
+			spiller.betal(ejer,spiller.slag*100*ejer.laborcamps);
 		}
 	}
 	
