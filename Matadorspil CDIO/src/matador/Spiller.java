@@ -46,5 +46,12 @@ public class Spiller {
 		else return false;
 	}
 	
+	public void betal(Spiller modtager, double kr)
+	{
+		System.out.println(navn+" betaler "+modtager.navn+" "+kr+" kroner");
+		transaktion(-kr);
+		modtager.transaktion(kr);
+		
+	}
 }
 
