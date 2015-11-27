@@ -69,7 +69,7 @@ Assert.assertEquals(expected, actual);
 //Perform the action to be tested
 this.refuge200.landOnField(this.spiller);
 this.refuge200.landOnField(this.spiller);
-expected = 1000;
+expected = 1400;
 actual = this.spiller.getKonto();
 
 Assert.assertEquals(expected, actual);
@@ -121,8 +121,7 @@ System.out.println("2 done");
 		Assert.assertEquals(expected, actual);
 		// Perform the action to be tested
 		this.refugeNeg200.landOnField(this.spiller);
-		// It is not possible to deposit a negative amount
-		expected = 1000;
+		expected = 800;
 		actual = this.spiller.getKonto();
 		Assert.assertEquals(expected, actual);
 		System.out.println("5 done");
@@ -143,7 +142,7 @@ System.out.println("2 done");
 
 		// It is still not possible to deposit a negative amount
 
-		expected = 1000;
+		expected = 600;
 		actual = this.spiller.getKonto();
 		Assert.assertEquals(expected, actual);
 		System.out.println("6 done");
