@@ -6,6 +6,8 @@ public class Spiller {
 	double konto;
 	public int slag;
 	int position;
+	int laborcamps=0;
+	int fleets=0;
 
 	public Spiller(String navn, double konto) {
 		this.navn = navn;
