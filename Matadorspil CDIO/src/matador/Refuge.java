@@ -1,27 +1,34 @@
 package matador;
 
-public class Refuge extends Felt
-{
-	double pris;
-	String navn;
+import desktop_resources.GUI;
 
+public class Refuge extends Felt {
+	protected int bonus;
 	
-	public Refuge(String navn,double pris) //konstruktør til oprettelsen af betalingsfelter
-	{
-		this.pris =pris;
-		this.navn=navn;
+	public Refuge(int bonus, int feltnr, String title, String subText, String description) {
+		super(feltnr, title, subText, description);
+		this.bonus = bonus;
 	}
 	
-	public void passeret(Spiller spiller)
-	{
-
-		spiller.besked("Passerer "+navn);
-	}
-
-	public void landet(Spiller spiller)                   
-	{
-		spiller.besked("Du er landet på "+navn+" ændring i din balance på: "+pris);
-		spiller.transaktion(pris);
+	public Refuge(int bonus) {
+		super();
+		this.bonus = bonus;
 	}
 	
+	public Refuge() {
+		super();
+	}
+	
+	public void landOnField(Spiller spiller) {
+		spiller.konto.indsæt(bonus);
+		GUI.getUserButtonPressed(spiller+" gets " + bonus + " free money", "ok");
+	}
+	
+	public int getRent() {
+		return -bonus;
+	}
+	
+	public String toString() {
+		return title + ", gives " + bonus + " cash money";
+	}
 }

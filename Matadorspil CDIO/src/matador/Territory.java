@@ -39,12 +39,14 @@ public class Territory extends Ownable
 			if(spiller!=ejer) {
 				if(spiller.getKonto() < leje) {
 					GUI.getUserButtonPressed(spiller + " pays " + spiller.getKonto() + "\nto " + ejer, "ok");
-					spiller.betal(ejer, spiller.getKonto());
+					spiller.konto.hæv(spiller.getKonto());
+					ejer.konto.indsæt(spiller.getKonto());
 
 				}
 				else {
 					GUI.getUserButtonPressed(spiller + " pays " + leje + "\nto " + ejer, "ok");
-					spiller.betal(ejer, leje);
+					spiller.konto.hæv(getLeje());
+					ejer.konto.indsæt(getLeje());;
 					
 				}
 			}

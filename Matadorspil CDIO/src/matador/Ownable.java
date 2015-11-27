@@ -21,7 +21,7 @@ public abstract class Ownable extends Felt {
 	public void buy(Spiller spiller) {
 		if(spiller.getKonto() > pris) {
 			ejer = spiller;
-			spiller.transaktion(-pris);
+			spiller.konto.hæv(pris);
 			GUI.getUserButtonPressed(spiller + " bought " + title, "ok");
 		}
 		else GUI.getUserButtonPressed(spiller + " cannot afford " + title, "ok");
