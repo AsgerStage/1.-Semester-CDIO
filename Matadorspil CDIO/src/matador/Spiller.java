@@ -37,5 +37,14 @@ public class Spiller {
 			{
 				return konto;
 			}
+	public boolean spørgsmål(String spørgsmål)
+	{
+		String spm = navn+": Vil du "+spørgsmål+"?";
+		String svar = javax.swing.JOptionPane.showInputDialog(spm, "ja");
+		System.out.println(spm+" "+svar);
+		if (svar!=null && svar.equals("ja")) return true;
+		else return false;
+	}
+	
 }
 
