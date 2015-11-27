@@ -21,11 +21,7 @@ public class Spiller {
 		{
 			konto = konto + kr;
 			System.out.println(navn+" har nu "+konto+" kr på sin konto.");
-			if (konto<0)
-			{			
 			
-		
-			}
 		}
 		
 	public double getKonto()

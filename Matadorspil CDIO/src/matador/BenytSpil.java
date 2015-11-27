@@ -9,7 +9,8 @@ public class BenytSpil
 		spil.spillere.add(Asger);
 		Spiller Basti = new Spiller("Basti", 30000);
 		spil.spillere.add(Basti);
-		
+		Spiller Peter = new Spiller("Peter", 30000);
+		spil.spillere.add(Peter);
 		
 		for (spil.spillersTur = 0; spil.spillersTur < 10000; spil.spillersTur++) {
 			Spiller spiller = spil.spillere.get(spil.spillersTur % spil.spillere.size());
@@ -28,7 +29,9 @@ public class BenytSpil
 					felt.passeret(spiller);
 				else
 					felt.landet(spiller);
-
+				if(spiller.getKonto()<0){
+				      spil.sletSpiller(spiller);
+				}
 				try {
 					Thread.sleep(500);
 				} catch (Exception e) {
