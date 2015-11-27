@@ -1,13 +1,13 @@
 package matador;
 
-public class Laborcamps {
+public class Laborcamp extends Felt {
 	Spiller ejer;
 	double pris;
 	String navn;
 	double leje;
 
 	
-	public Laborcamps(String navn,double pris) //konstruktør til oprettelsen af betalingsfelter
+	public Laborcamp(String navn,double pris) //konstruktør til oprettelsen af betalingsfelter
 	{
 		this.pris =pris;
 		this.navn=navn;

@@ -1,12 +1,12 @@
 package matador;
 
-public class Betalingsfelt extends Felt
+public class Refuge extends Felt
 {
 	double pris;
 	String navn;
 
 	
-	public Betalingsfelt(String navn,double pris) //konstruktør til oprettelsen af betalingsfelter
+	public Refuge(String navn,double pris) //konstruktør til oprettelsen af betalingsfelter
 	{
 		this.pris =pris;
 		this.navn=navn;

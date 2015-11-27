@@ -13,16 +13,25 @@ public class Spilleplade
 	
 	public Spilleplade() 
 	{
+		/*felter.add(new Territory("Tribe Encampment",2500,500));
+		felter.add(new Territory("Crater",2500,500));
+		felter.add(new Territory("Cold Desert",2500,500));
+		felter.add(new Territory("Black Cave",2500,500));
+		felter.add(new Territory("The Werewall",2500,500));
+		felter.add(new Territory("Mountain Village",2500,500));
+		felter.add(new Territory("South Citadel",2500,500));
+		felter.add(new Territory("Palace gates",2500,500));
 		felter.add(new Territory("Tower",2500,500));
-		felter.add(new Territory("Tower2",2500,500));
-		felter.add(new Territory("Tower3",2500,500));
-		felter.add(new Territory("Tower4",2500,500));
-		felter.add(new Territory("Tower5",2500,500));
-		felter.add(new Territory("Tower6",2500,500));
-		felter.add(new Territory("Tower7",2500,500));
-		felter.add(new Territory("Tower8",2500,500));
-		felter.add(new Territory("Tower9",2500,500));
-		felter.add(new Territory("Tower10",2500,500));
+		felter.add(new Territory("Castle",2500,500));
+		felter.add(new Refuge("Walled city",5000));
+		felter.add(new Refuge("Monastery",500));*/
+		felter.add(new Laborcamp("Huts in the mountain",2500));
+		felter.add(new Laborcamp("The pit",2500));/*
+		felter.add(new Fleet("Second Sail",2500));
+		felter.add(new Fleet("Sea Grover",2500));
+		felter.add(new Fleet("The Buccaneers",2500));
+		felter.add(new Fleet("Privateer armade",2500));*/
+		
 		
 		
 	}
