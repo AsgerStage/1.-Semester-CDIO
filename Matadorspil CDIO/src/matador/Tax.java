@@ -23,7 +23,7 @@ public class Tax extends Felt {
 			}
 			else
 			{
-				spiller.transaktion(spiller.getKonto()*0.9);
+				spiller.transaktion(-spiller.getKonto()*0.1);
 			}
 			}
 		}
