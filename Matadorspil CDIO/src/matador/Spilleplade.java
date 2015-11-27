@@ -11,17 +11,17 @@ public class Spilleplade
 	
 	public Spilleplade() 
 	{
-		felter.add(new Betalingsfelt("Tower",250));
-		felter.add(new Betalingsfelt("Crater",-100));
-		felter.add(new Betalingsfelt("Palace gates",100));
-		felter.add(new Betalingsfelt("Cold Desert",-20));
-		felter.add(new Betalingsfelt("Walled city",180));
-		felter.add(new Betalingsfelt("Monastery",0));
-		felter.add(new Betalingsfelt("Black cave",-70));
-		felter.add(new Betalingsfelt("Huts in the mountain",60));
-		felter.add(new Bonusfelt("The Werewall",-80));
-		felter.add(new Betalingsfelt("The pit",-50));
-		felter.add(new Betalingsfelt("Goldmine",650));
+		felter.add(new Territory("Tower",2500,500));
+		felter.add(new Territory("Tower2",2500,500));
+		felter.add(new Territory("Tower3",2500,500));
+		felter.add(new Territory("Tower4",2500,500));
+		felter.add(new Territory("Tower5",2500,500));
+		felter.add(new Territory("Tower6",2500,500));
+		felter.add(new Territory("Tower7",2500,500));
+		felter.add(new Territory("Tower8",2500,500));
+		felter.add(new Territory("Tower9",2500,500));
+		felter.add(new Territory("Tower10",2500,500));
+		
 		
 	}
 

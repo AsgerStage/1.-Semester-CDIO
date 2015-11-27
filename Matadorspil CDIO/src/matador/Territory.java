@@ -9,11 +9,11 @@ public class Territory extends Felt
 	double leje;
 
 	
-	public Territory(String navn,double pris, double grundleje) //konstruktør til oprettelsen af betalingsfelter
+	public Territory(String navn,double pris, double leje) //konstruktør til oprettelsen af betalingsfelter
 	{
 		this.pris =pris;
 		this.navn=navn;
-		this.leje=grundleje;
+		this.leje=leje;
 		
 	}
 	
@@ -33,7 +33,11 @@ public class Territory extends Felt
 			ejer=spiller;
 		}
 		}
-			
+		else
+		{
+			spiller.besked("du er landet på en anden spillers grund!");
+			spiller.betal(ejer, leje);
+		}
 	}
 	
 	
