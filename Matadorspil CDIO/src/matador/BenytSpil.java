@@ -32,6 +32,8 @@ public class BenytSpil
 				if(spiller.getKonto()<0){
 				      spil.sletSpiller(spiller);
 				      spiller.besked("Din konto er tom og du har derfor tabt");
+				}{
+					
 				}
 				try {
 					Thread.sleep(500);

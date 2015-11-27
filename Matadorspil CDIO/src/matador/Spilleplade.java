@@ -9,6 +9,8 @@ public class Spilleplade
 	ArrayList<Spiller> spillere = new ArrayList<Spiller>();
 	public static int spillersTur = 0;
 	
+	
+	
 	public Spilleplade() 
 	{
 		felter.add(new Territory("Tower",2500,500));
@@ -26,5 +28,10 @@ public class Spilleplade
 	}
 	public void sletSpiller(Spiller spiller){
 		  spillere.remove(spillere.indexOf(spiller));
-}
+	}{
+	if(spillere.size()==1){
+		System.out.println(": Du er den sidste spiller og har derfor vundet spillet, tillykke!");
+		
+	};
+	}
 }
