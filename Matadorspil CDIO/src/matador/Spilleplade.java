@@ -24,5 +24,7 @@ public class Spilleplade
 		
 		
 	}
-
+	public void sletSpiller(Spiller spiller){
+		  spillere.remove(spillere.indexOf(spiller));
+}
 }
