@@ -7,11 +7,11 @@ public class Laborcamps {
 	double leje;
 
 	
-	public Laborcamps(String navn,double pris, double leje) //konstruktør til oprettelsen af betalingsfelter
+	public Laborcamps(String navn,double pris) //konstruktør til oprettelsen af betalingsfelter
 	{
 		this.pris =pris;
 		this.navn=navn;
-		this.leje=leje;
+		
 		
 	}
 	
