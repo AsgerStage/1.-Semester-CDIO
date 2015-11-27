@@ -1,49 +1,68 @@
 package matador;
 
-public class Territory extends Felt
+import desktop_resources.GUI;
+import matador.Spiller;
+
+public class Territory extends Ownable
 {
-	
-	Spiller ejer;
-	double pris;
-	String navn;
-	double leje;
+	private int leje;
 
-	
-	public Territory(String navn,double pris, double leje) //konstruktør til oprettelsen af betalingsfelter
-	{
-		this.pris =pris;
-		this.navn=navn;
-		this.leje=leje;
-		
+	public Territory(int leje, int pris, int fieldNumber, String title, String subText, String description) {
+		super(fieldNumber, title, subText, description);
+		this.leje = leje;
+		this.pris = pris;
+		this.feltnr = super.feltnr;
+		this.title = super.title;
+		this.subtext = super.subtext;
+		this.description = super.description;
 	}
 	
+	public Territory(int leje) {
+		super();
+		this.leje = leje;
+	}
 
+	public Territory() {
+		super();
+	}
 
-	public void landet(Spiller spiller)                   
-	{
-		spiller.besked("Du er landet på "+navn);
-		if (spiller==ejer)
-		{
-			spiller.besked("Du ejer dette Territory");
+	public void landOnField(Spiller spiller) {
+		//		buy = false;
+		if(ejer == null) {
+			boolean buy = GUI.getUserLeftButtonPressed(title + " is not owned", "buy", "ignore");
+			if(buy) {
+				buy(spiller);
+			}
+			else GUI.getUserButtonPressed(spiller + " did not buy " + title, "ok");
 		}
-		else if (ejer==null)
-		{ if (spiller.spørgsmål("Vil du købe "+navn+" for "+pris+"?"))
-		{
-			spiller.transaktion(-pris);
-			ejer=spiller;
-		}
-		}
-		else
-		{
-			spiller.besked("du er landet på en anden spillers grund!");
-			spiller.betal(ejer, leje);
+		else {
+			if(spiller!=ejer) {
+				if(spiller.getKonto() < leje) {
+					GUI.getUserButtonPressed(spiller + " pays " + spiller.getKonto() + "\nto " + ejer, "ok");
+					spiller.betal(ejer, spiller.getKonto());
+
+				}
+				else {
+					GUI.getUserButtonPressed(spiller + " pays " + leje + "\nto " + ejer, "ok");
+					spiller.betal(ejer, leje);
+					
+				}
+			}
+			else GUI.getUserButtonPressed(ejer + " owns " + title, "ok");
 		}
 	}
-	
-	
-	public void passeret(Spiller spiller)
-	{
 
-		spiller.besked("Passerer "+navn);
+	public void lose() {
+		ejer = null;
+	}
+
+	public int getLeje() {
+		return leje;
+	}
+
+	public String toString() {
+		if(ejer != null)
+			return this.title +  " owned by " + ejer + "\n Rent is " + leje;
+		return this.title + " isn't owned" ;
 	}
 }
