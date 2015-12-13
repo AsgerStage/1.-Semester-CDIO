@@ -14,6 +14,8 @@ import matador.Spiller;
 
 		public static void main(String[] args) {
 			initiate();
+			
+		System.out.println("testabcd");
 			while(true) {
 				for(int i = 0; i < spillere.length; i++) {
 					if(!spillere[i].hasLost())
