@@ -15,14 +15,14 @@ import matador.Spiller;
 		public static void main(String[] args) {
 			initiate();
 			
-		System.out.println("testabcd");
+		
 			while(true) {
 				for(int i = 0; i < spillere.length; i++) {
 					if(!spillere[i].hasLost())
 						spillersTur(spillere[i]);
 					for(int j = 0; j < spillere.length; j++)
 						GUI.setBalance("" + spillere[i].getNumber(), spillere[i].getKonto());
-					System.out.println("hej basger");
+					
 				}
 				if (loseCount == spillere.length - 1)
 					break;
