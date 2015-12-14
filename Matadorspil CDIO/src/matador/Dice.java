@@ -31,6 +31,16 @@ public class Dice {
 		return d1 + d2;
 	}
 	
+	
+	// Used for testing purposes
+	protected void setd1(int n) {
+		d1 = n;
+	}
+	
+	protected void setd2(int n) {
+		d2 = n;
+	}
+	
 	public String toString() {
 		return "die 1 is " + d1 + " and die 2 is " + d2;
 	}
