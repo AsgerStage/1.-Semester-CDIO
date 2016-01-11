@@ -63,6 +63,7 @@ public class LaborcampTest  {
 			
 			
 	}
+		@Test
 		public void testLandOnFieldLaborcamp2() {
 
 			int expected = 10000;

@@ -13,7 +13,7 @@ import matador.Territory;
 public class GameBoard {
 	private static final int TERRITORIES = 11;
 	private static final int REFUGES = 2;
-	private static final int LABOR_CAMPS = 2;
+	private static final int LABOR_CAMPS = 3;
 	private static final int TAXES = 2;
 	private static final int FLEETS = 4;
 	private static final int TYPES = 5;
@@ -60,12 +60,13 @@ public class GameBoard {
 		refuges[1] = new Refuge(500, 13, "Monastery", "500 free money", "Bigger walls");
 		laborCamps[0] = new Laborcamp(100, 2500, 14, "Huts in the mountain", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
 		laborCamps[1] = new Laborcamp(100, 2500, 15, "The pit", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
-		taxes[0] = new Tax(2000, 16, "Goldmine", "Pay 2000 or\n10% of your money", "Gold tax?");
-		taxes[1] = new Tax(4000, 17, "Caravan", "Pay 2000 or\n10% of your money", "Regular holdup");
-		fleets[0] = new Fleet(4000, 18, "Second Sail", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
-		fleets[1] = new Fleet(4000, 19, "Sea Grover", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
-		fleets[2] = new Fleet(4000, 20, "The Buccaneers", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
-		fleets[3] = new Fleet(4000, 21, "Privateer armarade", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
+		laborCamps[2] = new Laborcamp(100, 2500, 16, "The pit2", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
+		taxes[0] = new Tax(2000, 17, "Goldmine", "Pay 2000 or\n10% of your money", "Gold tax?");
+		taxes[1] = new Tax(4000, 18, "Caravan", "Pay 2000 or\n10% of your money", "Regular holdup");
+		fleets[0] = new Fleet(4000, 19, "Second Sail", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
+		fleets[1] = new Fleet(4000, 20, "Sea Grover", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
+		fleets[2] = new Fleet(4000, 21, "The Buccaneers", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
+		fleets[3] = new Fleet(4000, 22, "Privateer armarade", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
 	}
 
 	public Felt getField(int field) {

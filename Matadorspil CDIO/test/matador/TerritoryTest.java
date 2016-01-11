@@ -46,6 +46,7 @@ public class TerritoryTest {
 
 	public void testLandOnFieldfleet() {
 
+		
 		int expected = 10000;
 		int actual = this.ejer.getKonto();
 		Assert.assertEquals(expected, actual);
