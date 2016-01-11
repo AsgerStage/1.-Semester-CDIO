@@ -11,7 +11,7 @@ import matador.Territory;
 
 
 public class GameBoard {
-	private static final int TERRITORIES = 11;
+	private static final int TERRITORIES = 28;
 	private static final int REFUGES = 2;
 	private static final int LABOR_CAMPS = 3;
 	private static final int TAXES = 2;
@@ -56,17 +56,36 @@ public class GameBoard {
 		territories[8] = new Territory(2600, 5500, 9, "Palace Gates", "Price: 5500\nRent: 2600", "Buy a palace");
 		territories[9] = new Territory(3200, 6000, 10, "Tower", "Price: 6000\nRent: 3200", "Buy a tower");
 		territories[10] = new Territory(4000, 8000, 11, "Castle", "Price: 8000\nRent: 4000", "Buy a castle");
-		refuges[0] = new Refuge(5000, 12, "Walled city", "5000 free money", "Walls keep you safe");
-		refuges[1] = new Refuge(500, 13, "Monastery", "500 free money", "Bigger walls");
-		laborCamps[0] = new Laborcamp(100, 2500, 14, "Huts in the mountain", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
-		laborCamps[1] = new Laborcamp(100, 2500, 15, "The pit", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
-		laborCamps[2] = new Laborcamp(100, 2500, 16, "The pit2", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
-		taxes[0] = new Tax(2000, 17, "Goldmine", "Pay 2000 or\n10% of your money", "Gold tax?");
-		taxes[1] = new Tax(4000, 18, "Caravan", "Pay 2000 or\n10% of your money", "Regular holdup");
-		fleets[0] = new Fleet(4000, 19, "Second Sail", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
-		fleets[1] = new Fleet(4000, 20, "Sea Grover", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
-		fleets[2] = new Fleet(4000, 21, "The Buccaneers", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
-		fleets[3] = new Fleet(4000, 22, "Privateer armarade", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
+		territories[11] = new Territory(4000, 8000, 12, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		refuges[0] = new Refuge(5000, 13, "Walled city", "5000 free money", "Walls keep you safe");
+		refuges[1] = new Refuge(500, 14, "Monastery", "500 free money", "Bigger walls");
+		laborCamps[0] = new Laborcamp(100, 2500, 15, "Huts in the mountain", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
+		laborCamps[1] = new Laborcamp(100, 2500, 16, "The pit", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
+		laborCamps[2] = new Laborcamp(100, 2500, 17, "The pit2", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
+		taxes[0] = new Tax(2000, 18, "Goldmine", "Pay 2000 or\n10% of your money", "Gold tax?");
+		taxes[1] = new Tax(4000, 19, "Caravan", "Pay 2000 or\n10% of your money", "Regular holdup");
+		fleets[0] = new Fleet(4000, 20, "Second Sail", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
+		fleets[1] = new Fleet(4000, 21, "Sea Grover", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
+		fleets[2] = new Fleet(4000, 22, "The Buccaneers", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
+		fleets[3] = new Fleet(4000, 23, "Privateer armarade", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
+		territories[12] = new Territory(4000, 8000, 24, "Castle3", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[13] = new Territory(4000, 8000, 25, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[14] = new Territory(4000, 8000, 26, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[15] = new Territory(4000, 8000, 27, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[16] = new Territory(4000, 8000, 28, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[17] = new Territory(4000, 8000, 29, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[18] = new Territory(4000, 8000, 30, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[19] = new Territory(4000, 8000, 31, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[20] = new Territory(4000, 8000, 32, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[21] = new Territory(4000, 8000, 33, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[22] = new Territory(4000, 8000, 34, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[23] = new Territory(4000, 8000, 35, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[24] = new Territory(4000, 8000, 36, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[25] = new Territory(4000, 8000, 37, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[26] = new Territory(4000, 8000, 38, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[27] = new Territory(4000, 8000, 39, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[28] = new Territory(4000, 8000, 40, "Castle2", "Price: 8000\nRent: 4000", "Buy a castle");
+
 	}
 
 	public Felt getField(int field) {
