@@ -45,60 +45,60 @@ public class GameBoard {
 	}
 	
 	public void setFields() {
-		territories[0] = new Territory(100, 1000, 1, "RABAT", "Price: 1000\nRent: 100", "Buy a tribe");
-		territories[1] = new Territory(300, 1500, 2, "NAIROBI", "Price: 1500\nRent: 300", "Buy a hole");
+		territories[0] = new Territory(100, 1000, 1, "RABAT", "Pris: 1000\n Rent: 100", "Køb en by");
+		territories[1] = new Territory(150, 1000, 2, "NAIROBI", "Pris: 1000\n Rent: 150", "Køb en by");
 		
-		territories[2] = new Territory(500, 2000, 3, "JERUSALEM", "Price: 2000\nRent: 500", "Buy a rock");
-		territories[3] = new Territory(700, 3000, 4, "BAGHDAD", "Price: 3000\nRent: 700", "Buy cold sand");
-		territories[4] = new Territory(1000, 4000, 5, "KABUL", "Price: 4000\nRent: 1000", "Buy dark rock");
+		territories[2] = new Territory(200, 1500, 3, "JERUSALEM", "Pris: 1500\n Rent: 200", "Køb en by");
+		territories[3] = new Territory(300, 1500, 4, "BAGHDAD", "Pris: 1500\n Rent: 300", "Køb en by");
+		territories[4] = new Territory(500, 1500, 5, "KABUL", "Pris: 1500\n Rent: 500", "Køb en by");
 		
-		territories[5] = new Territory(1300, 4300, 6, "MOSCOW", "Price: 4300\nRent: 1300", "Buy a wall");
-		territories[6] = new Territory(1600, 4750, 7, "NEW DELHI", "Price: 4750\nRent: 1600", "Buy a village on a rock");
-		territories[7] = new Territory(2000, 5000, 8, "BEIJING", "Price: 5000\nRent: 2000", "Buy a citadel");
+		territories[5] = new Territory(700, 2000, 6, "MOSCOW", "Pris: 2000\n Rent: 700", "Køb en by");
+		territories[6] = new Territory(850, 2000, 7, "NEW DELHI", "Pris: 2000\n Rent: 850", "Køb en by");
+		territories[7] = new Territory(1050, 2000, 8, "BEIJING", "Pris: 2000\n Rent: 1050", "Køb en by");
 		
-		territories[8] = new Territory(2600, 5500, 9, "TOKYO", "Price: 5500\nRent: 2600", "Buy a palace");
-		territories[9] = new Territory(3200, 6000, 10, "SINGAPORE", "Price: 6000\nRent: 3200", "Buy a tower");
-		territories[10] = new Territory(4000, 8000, 11, "SYDNEY", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[8] = new Territory(1200, 2500, 9, "TOKYO", "Pris: 2500\n Rent: 1200", "Køb en by");
+		territories[9] = new Territory(1350, 2500, 10, "SINGAPORE", "Pris: 2500\n Rent: 1350", "Køb en by");
+		territories[10] = new Territory(1400, 2500, 11, "SYDNEY", "Pris: 2500\n Rent: 1400", "Køb en by");
 		
-		territories[11] = new Territory(4000, 8000, 12, "BUENOS AIRES", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[11] = new Territory(1500, 3000, 12, "BUENOS AIRES", "Pris: 3000\n Rent: 1500", "Køb en by");
 	
-		refuges[0] = new Refuge(5000, 13, "NATIONAL BANKEN", "5000 free money", "Walls keep you safe");
-		refuges[1] = new Refuge(500, 14, "DANSKE SPIL", "500 free money", "Bigger walls");
+		refuges[0] = new Refuge(5000, 13, "NATIONAL BANKEN", "Modtag 5000,-", "Du har vundet. Tillykke!");
+		refuges[1] = new Refuge(500, 14, "DANSKE SPIL", "Modtag 500,-", "Du har vundet. Tillykke!");
 		
-		laborCamps[0] = new Laborcamp(100, 2500, 15, "SHANGHAI HAVN", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
-		laborCamps[1] = new Laborcamp(100, 2500, 16, "HAMBURG HAVN	", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
-		laborCamps[2] = new Laborcamp(100, 2500, 17, "SHENZEN HAVN", "Price: 2500", "Pay 100x diceroll for each camp\nthe owner has");
+		laborCamps[0] = new Laborcamp(100, 2500, 15, "SHANGHAI HAVN", "Pris: 2500", "Køb en havn");
+		laborCamps[1] = new Laborcamp(100, 2500, 16, "HAMBURG HAVN	", "Pris: 2500", "Køb en havn");
+		laborCamps[2] = new Laborcamp(100, 2500, 17, "SHENZEN HAVN", "Pris: 2500", "Køb en havn");
 		
-		taxes[0] = new Tax(2000, 18, "INDKOMST SKAT", "Pay 2000 or\n10% of your money", "Gold tax?");
-		taxes[1] = new Tax(4000, 19, "INDKOMST SKAT", "Pay 2000 or\n10% of your money", "Regular holdup");
+		taxes[0] = new Tax(2000, 18, "INDKOMST SKAT", "Betal 2000,- eller 10%", "Betal din indkomstskat!");
+		taxes[1] = new Tax(4000, 19, "INDKOMST SKAT", "Betal 2000,- eller 10%", "Betal din indkomstskat!");
 		
-		fleets[0] = new Fleet(4000, 20, "SYDNEY LUFTHAVN", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
-		fleets[1] = new Fleet(4000, 21, "KØBENHAVNS LUFTHAVN", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
-		fleets[2] = new Fleet(4000, 22, "BANGKOK LUFTHAVN", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
-		fleets[3] = new Fleet(4000, 23, "HAWAII LUFTHAVN", "Price: 4000", "pay depending on the amount of fleets\nthe owner has");
+		fleets[0] = new Fleet(4000, 20, "SYDNEY LUFTHAVN", "Pris: 4000", "Køb en lufthavn");
+		fleets[1] = new Fleet(4000, 21, "KØBENHAVNS LUFTHAVN", "Pris: 4000", "Køb en lufthavn");
+		fleets[2] = new Fleet(4000, 22, "BANGKOK LUFTHAVN", "Pris: 4000", "Køb en lufthavn");
+		fleets[3] = new Fleet(4000, 23, "HAWAII LUFTHAVN", "Pris: 4000", "Køb en lufthavn");
 		
-		territories[12] = new Territory(4000, 8000, 24, "ABU DHABI", "Price: 8000\nRent: 4000", "Buy a castle");
-		territories[13] = new Territory(4000, 8000, 25, "LAS VEGAS", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[12] = new Territory(1600, 3500, 24, "ABU DHABI", "Pris: 3500\n Rent: 1600", "Køb en by");
+		territories[13] = new Territory(1750, 3500, 25, "LAS VEGAS", "Pris: 3500\n Rent: 1750", "Køb en by");
 		
-		territories[14] = new Territory(4000, 8000, 26, "WASHINGTON D.C", "Price: 8000\nRent: 4000", "Buy a castle");
-		territories[15] = new Territory(4000, 8000, 27, "NEW YORK", "Price: 8000\nRent: 4000", "Buy a castle");
-		territories[16] = new Territory(4000, 8000, 28, "NUUK", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[14] = new Territory(450, 1250, 26, "WASHINGTON D.C", "Pris: 1250\n Rent: 450", "Køb en by");
+		territories[15] = new Territory(400, 1250, 27, "NEW YORK", "Pris: 1250\n Rent: 400", "Køb en by");
+		territories[16] = new Territory(325, 1250, 28, "NUUK", "Pris: 1250\n Rent: 325", "Køb en by");
 		
-		territories[17] = new Territory(4000, 8000, 29, "LONDON", "Price: 8000\nRent: 4000", "Buy a castle");
-		territories[18] = new Territory(4000, 8000, 30, "PARIS", "Price: 8000\nRent: 4000", "Buy a castle");
-		territories[19] = new Territory(4000, 8000, 31, "BERLIN", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[17] = new Territory(650, 1750, 29, "LONDON", "Pris: 1750\n Rent: 650", "Køb en by");
+		territories[18] = new Territory(550, 1750, 30, "PARIS", "Pris: 1750\n Rent: 550", "Køb en by");
+		territories[19] = new Territory(500, 1750, 31, "BERLIN", "Pris: 1750\n Rent: 500", "Køb en by");
 		
-		territories[20] = new Territory(4000, 8000, 32, "LUXEMBOURG", "Price: 8000\nRent: 4000", "Buy a castle");
-		territories[21] = new Territory(4000, 8000, 33, "STOCKHOLM", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[20] = new Territory(1500, 2250, 32, "LUXEMBOURG", "Pris: 2250\n Rent: 1500", "Køb en by");
+		territories[21] = new Territory(1700, 2250, 33, "STOCKHOLM", "Pris: 2250\n Rent: 1700", "Køb en by");
 		
-		territories[22] = new Territory(4000, 8000, 34, "OSLO", "Price: 8000\nRent: 4000", "Buy a castle");
-		territories[23] = new Territory(4000, 8000, 35, "FRANKFURT", "Price: 8000\nRent: 4000", "Buy a castle");
-		territories[24] = new Territory(4000, 8000, 36, "LOS ANGELES", "Price: 8000\nRent: 4000", "Buy a castle");
-		territories[25] = new Territory(4000, 8000, 37, "HONG KONG", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[22] = new Territory(2750, 2750, 34, "OSLO", "Pris: 2750\n Rent: 2750", "Køb en by");
+		territories[23] = new Territory(2750, 2750, 35, "FRANKFURT", "Pris: 2750\n Rent: 2750", "Køb en by");
+		territories[24] = new Territory(2750, 2750, 36, "LOS ANGELES", "Pris: 2750\n Rent: 2750", "Køb en by");
+		territories[25] = new Territory(2750, 2750, 37, "HONG KONG", "Pris: 2750\n Rent: 2750", "Køb en by");
 		
-		territories[26] = new Territory(4000, 8000, 38, "HELSINKI", "Price: 8000\nRent: 4000", "Buy a castle");
-		territories[27] = new Territory(4000, 8000, 39, "REYKJAVIK", "Price: 8000\nRent: 4000", "Buy a castle");
-		territories[28] = new Territory(4000, 8000, 40, "AMSTERDAM", "Price: 8000\nRent: 4000", "Buy a castle");
+		territories[26] = new Territory(2750, 3250, 38, "HELSINKI", "Pris: 3250\n Rent: 2750", "Køb en by");
+		territories[27] = new Territory(2750, 3250, 39, "REYKJAVIK", "Pris: 3250\n Rent: 2750", "Køb en by");
+
 
 	}
 
